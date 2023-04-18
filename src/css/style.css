@@ -6,6 +6,7 @@
   list-style: none;
 }
 
+
 .normal {
   background-color: #a6a877;
 }
@@ -84,7 +85,48 @@
   margin: 0.5rem;
   padding: 1rem;
   border-radius: 1rem;
+  cursor: pointer;
 }
+.pokemon:hover {
+  opacity:0.7;
+  -xpedu-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+.popup-wrapper {
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+ .popup {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 10% auto;
+  padding: 100px;
+  background: #fff;
+  position: relative;
+}
+
+.popup-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.blur {
+  filter: blur(5px);
+} 
 
 .pokemon .number {
   color: #000;
